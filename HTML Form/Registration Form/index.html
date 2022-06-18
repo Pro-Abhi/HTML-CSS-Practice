@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>
+      ============================= HTML Form =============================
+    </h1>
+
+    <!-- student registration form -->
+    <h2>** <u>Student Registration Form</u> **</h2>
+    <form action="">
+      <fieldset>
+        <legend>** Student Registration Form **</legend>
+
+        <!-- first name -->
+      <input
+        type="text"
+        name="fname"
+        id=""
+        placeholder="First Name"
+        size="40"
+        required
+      />
+      <!-- last name -->
+      <input
+        type="text"
+        name="lname"
+        id=""
+        placeholder="Last name"
+        size="40"
+        required
+      />
+      <br />
+      <br />
+      <!-- Email ID -->
+      <input
+        type="email"
+        name="email"
+        id=""
+        placeholder="Email"
+        size="40"
+        required
+      />
+      <br />
+      <br />
+      <!-- mobile no. -->
+      <input
+        type="tel"
+        name="mobile"
+        id=""
+        placeholder="Enter your number"
+        maxlength="12"
+        size="25"
+        required
+      />
+      <br />
+      <br />
+      <!-- date of birth -->
+      <label for="dob">Date of Birth :</label>
+      <input
+        type="date"
+        name="date_of_birth"
+        id="dob"
+        min="1991-01-01"
+        max="2022-06-08"
+        required
+      />
+      <br />
+      <br />
+      <!-- gender -->
+      <label for="gender">Gender :</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label>
+      <br />
+      <br />
+      <!-- address -->
+      <label for="address">Address :</label>
+      <textarea
+        name="address"
+        id="address"
+        cols="30"
+        rows="3"
+        placeholder="Enter your address here..."
+        required
+      ></textarea>
+      <br />
+      <br />
+      <!-- city -->
+      <label for="city">City</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="Enter your city ..."
+        size="25"
+        required
+      />
+      <br />
+      <br />
+      <!-- pin code -->
+      <label for="pin_code">Pin Code :</label>
+      <input type="tel" name="pin-code" id="pin_code" maxlength="8" required />
+      <br /><br />
+      <!-- select state -->
+      <label for="state">Select your State :</label>
+      <input type="text" list="state-list" id="state" />
+      <!-- list value should be fill as id value here -->
+      <datalist id="state-list">
+        <option value="Andhra Pradesh"></option>
+        <option value="Andaman and Nicobar Islands"></option>
+        <option value="Arunachal Pradesh"></option>
+        <option value="Assam"></option>
+        <option value="Bihar"></option>
+        <option value="Chandigarh"></option>
+        <option value="Chhattisgarh"></option>
+        <option value="Dadra & Nagar Haveli and Daman & Diu"></option>
+        <option value="Delhi"></option>
+        <option value="Goa"></option>
+        <option value="Gujarat"></option>
+        <option value="Haryana"></option>
+        <option value="Himachal Pradesh"></option>
+        <option value="Jammu and Kashmir"></option>
+        <option value="Jharkhand"></option>
+        <option value="Ladakh"></option>
+        <option value="Lakshadweep"></option>
+        <option value="Madhya Pradesh"></option>
+        <option value="Maharashtra"></option>
+        <option value="Manipur"></option>
+        <option value="Meghalaya"></option>
+        <option value="Mizoram"></option>
+        <option value="Nagaland"></option>
+        <option value="Odisha"></option>
+        <option value="Puducherry"></option>
+        <option value="Punjab"></option>
+        <option value="Rajasthan"></option>
+        <option value="Sikkim"></option>
+        <option value="Tamil Nadu"></option>
+        <option value="Telangana"></option>
+        <option value="Tripura"></option>
+        <option value="Uttar Pradesh"></option>
+        <option value="Uttarakhand"></option>
+        <option value="West Bengal"></option>
+      </datalist>
+      <br />
+      <br />
+      <!-- choose hobbies -->
+      <label for="hobby">Hobbies :</label>
+      <input type="checkbox" name="drawing" id="drawing" />
+      <label for="drawing">Drawing</label>
+      <input type="checkbox" name="singing" id="singing" />
+      <label for="singing">Singing</label>
+      <input type="checkbox" name="dancing" id="dancing" />
+      <label for="dancing">Dancing</label>
+      <input type="checkbox" name="sketching" id="sketching" />
+      <label for="sketching">Sketching</label>
+      <input type="checkbox" name="others" id="others" />
+      <label for="others">Others</label>
+      <input
+        type="text"
+        placeholder="write your hobbies..."
+        size="50"
+        maxlength="150"
+      />
+      <br />
+      <br />
+      <!-- academic background -->
+      <label for="">Academic Background :</label>
+      <br />
+      <table border="2" cellpadding="10" cellspacing="5">
+        <tr>
+          <th>Sr. No.</th>
+          <th>Examination</th>
+          <th>Field</th>
+          <th>Board</th>
+          <th>Percentage / CGPA</th>
+          <th>Year of Passing</th>
+        </tr>
+        <tr>
+          <td>
+            <b>1</b>
+          </td>
+          <td>
+            <b>Class X</b>
+          </td>
+          <td>
+            <input type="type" value="Class X" readonly />
+          </td>
+          <td>
+            <input type="text" required />
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="percentage"
+              maxlength="5"
+              placeholder="90.23 / 8.5"
+              required
+            />
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="passing_year"
+              maxlength="4"
+              placeholder="2017"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>2</b>
+          </td>
+          <td>
+            <b>Class XX</b>
+          </td>
+          <td>
+            <select name="" id="" +>
+              <option value="science">Science</option>
+              <option value="commerce">Commerce</option>
+              <option value="art">Art</option>
+            </select>
+          </td>
+          <td>
+            <input type="text" />
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="percentage"
+              maxlength="5"
+              placeholder="90.23 / 8.5"
+            />
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="passing_year"
+              maxlength="4"
+              placeholder="2019"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>3</b>
+          </td>
+          <td>
+            <b>Graduation</b>
+          </td>
+          <td>
+            <select name="" id="">
+              <option value="">Select Course Here...</option>
+              <optgroup label="For Science">
+                <optgroup label="Courses under B-Tech">
+                  <option value="Aeronautical">Aeronautical Engineering</option>
+                  <option value="Automobile">Automobile Engineering</option>
+                  <option value="Civil">Civil Engineering</option>
+                  <option value="CSE">Computer Science and Engineering</option>
+                  <option value="Biotechnology">Biotechnology Engineering</option>
+                  <option value="Electronics">Electrical and Electronics Engineering</option>
+                  <option value="Robotics">Automation and Robotics Engineering</option>
+                  <option value="Petroleum">Petroleum Engineering</option>
+                  <option value="Chemical">Chemical Engineering</option>
+                  <option value="Textile">Textile Engineering</option>
+                </optgroup>
+                <option value="B.Arch">
+                  B.Arch - Bachelor of Architecture
+                </option>
+                <option value="BCA">
+                  BCA - Bachelor of Computer Applications
+                </option>
+                <option value="B.Sc-IT">B.Sc. - Information Technology</option>
+                <option value="B.S-Nursing">B.Sc - Nursing</option>
+                <option value="BPharma">BPharma - Bachelor of Pharmacy</option>
+                <option value="B.Sc-Interior Design">
+                  B.Sc - Interior Design
+                </option>
+                <option value="BDS">BDS - Bachelor of Dental Surgery</option>
+                <option value="Animation">
+                  Animation, Graphics and Multimedia
+                </option>
+                <option value="B.Sc.–Nutrition">
+                  B.Sc. – Nutrition & Dietetics
+                </option>
+                <option value="BPT">BPT- Bachelor of Physiotherapy</option>
+                <option value="B.Sc-Applied_Geology">
+                  B.Sc- Applied Geology
+                </option>
+                <option value="BA/B.Sc.Liberal_Arts">
+                  BA/B.Sc. Liberal Arts
+                </option>
+                <option value="Physics">B.Sc.- Physics</option>
+                <option value="Chemistry">B.Sc. Chemistry</option>
+                <option value="Mathematics">B.Sc. Mathematics</option>
+              </optgroup>
+              <optgroup label="For Commerce">
+                <option value="B.Com">B.Com - Bachelor of Commerce</option>
+                <option value="BBA">
+                  BBA - Bachelor of Business Administration
+                </option>
+                <option value="B.Com(Hons.)">B.Com (Hons.)</option>
+                <option value="BA(Hons.)">BA (Hons.) in Economics</option>
+                <option value="B.Com-LL.B.">
+                  Integrated Law Program- B.Com LL.B.
+                </option>
+                <option value="BBA-LL.B">
+                  Integarted Law Program- BBA LL.B
+                </option>
+              </optgroup>
+              <optgroup label="For Art">
+                <option value="BA">BA</option>
+                <option value="BBA">
+                  BBA - Bachelor of Business Administration
+                </option>
+                <option value="BMS">
+                  BMS - Bachelor of Management Science
+                </option>
+                <option value="BFA">BFA - Bachelor of Fine Arts</option>
+                <option value="BEM">BEM - Bachelor of Event Management</option>
+                <option value="BA+LL.B">
+                  Integrated Law Course- BA + LL.B
+                </option>
+                <option value="BJMC">
+                  BJMC - Bachelor of Journalism and Mass Communication
+                </option>
+                <option value="BFD">BFD - Bachelor of Fashion Designing</option>
+                <option value="BSW">BSW - Bachelor of Social Work</option>
+                <option value="BBS">BBS - Bachelor of Business Studies</option>
+                <option value="BTTM">
+                  BTTM - Bachelor of Travel and Tourism Management
+                </option>
+              </optgroup>
+            </select>
+          </td>
+          <td>
+            <input type="text" />
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="percentage"
+              maxlength="5"
+              placeholder="90.23 / 8.5"
+            />
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="passing_year"
+              maxlength="4"
+              placeholder="2021"
+            />
+          </td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
