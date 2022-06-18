@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Nested Table</title>
+  </head>
+  <body>
+    <h1>
+      =========================== HTML Nested Table ===========================
+    </h1>
+
+    <!-- nested table -->
+    <h3>-- nested table --</h3>
+    <table border="2" cellpadding="25px">
+      <thead>
+        <tr>
+          <th>Header Column 1</th>
+          <th>Header Column 2</th>
+          <th>Header Column 3</th>
+          <th>Header Column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 2 - Item 1</td>
+          <td>Row 2 - Item 2</td>
+          <td rowspan="2">
+            Row 2 : Nested Table 1
+            <table border="2" cellpadding="15px">
+              <tr>
+                <th>Row 2 Header</th>
+                <td>Item 1</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>Item 2</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>Item 3</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            Row 2 - Item 4 <br />
+            A second line
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Row 3 : Nested Table 2
+            <table border="2" cellpadding="15px">
+              <tr>
+                <th>Row 3 Header</th>
+                <td>Item 1</td>
+              </tr>
+              <tr>
+                <th>Row 3 Header</th>
+                <td>Item 2</td>
+              </tr>
+            </table>
+          </td>
+          <td>Row 3 - Item 2</td>
+          <td rowspan="2">Row 3 - Item 3</td>
+        </tr>
+        <tr>
+          <td>Row 4 - Item 1</td>
+          <td>Row 4 - Item 2</td>
+          <td>Row 4 - Item 3</td>
+        </tr>
+        <tr>
+          <td colspan="4">Row 5 - Last Row of Outer Table</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <hr />
+    <br />
+
+    <!-- nested table -->
+    <h3>-- nested table --</h3>
+    <table border="1" cellpadding="10px">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            XYZ Inc. <br />
+            1250 Oabc Pakee Stre 1010 <br />
+            Sunnyvale, CA94085
+          </td>
+          <td>
+            <table border="1" cellpadding="10px">
+              <tr>
+                <td>
+                  <b>Invoice No.</b> <br />
+                  <span>11111</span>
+                </td>
+                <td>
+                  <b>Dated</b> <br />
+                  <span>11/12/2016</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Delivery Note</b> <br />
+                  <span>11111</span>
+                </td>
+                <td>
+                  <b>Mode of Payment</b> <br />
+                  <span>Online</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Buyer : <br />
+            <br />
+            abc Inc. <br />
+            1130 Orrr Park Sea 320, <br />
+            Sunnyvale, CA 94085
+          </td>
+          <td>
+            <table border="1" cellpadding="10px">
+              <tr>
+                <td>
+                  <b>Buyer's Order No.</b> <br />
+                  <span>222222</span>
+                </td>
+                <td>
+                  <b>Dated</b> <br />
+                  <span>11/12/2016</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <table border="1" cellpadding="10px">
+              <thead>
+                <tr>
+                  <th>Sr No.</th>
+                  <th>Particulars</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    Unbxd Software License Fees for 2017
+                    <br /><br />
+                    SetUp Fees
+                    <br />
+                    POC Fees
+                    <br />
+                    Monthly License Fees
+                    <br />
+                    Overage Fees
+                    <br />
+                    Additional Fees
+                    <br />
+                    Discount Fees
+                    <br />
+                  </td>
+                  <td>
+                    $99
+                    <br /><br />
+                    $39
+                    <br />
+                    $19
+                    <br />
+                    $29
+                    <br />
+                    $49
+                    <br />
+                    $99
+                    <br />
+                    $99
+                    <br />
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td><b>Total</b></td>
+                  <td><b>$433</b></td>
+                </tr>
+              </tfoot>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            Amount Chargeble in Words : <br /><br />
+            USD Four Hundred Thirty Three
+            <br /><br /><br />
+            Entry ID : <b>CORP 3793457</b> <br /><br /><br />
+            In Case you wish to pay us through ACH/Wire Transfer.
+            <br />
+            refer your bank details below :
+            <br /><br /><br />
+            Bank Name: XYZ Bank <br />
+            Beneficiary Name: XYZ Bank <br />
+            A/C No: 6563563466 <br />
+            ABA/Routing No: 23232323 <br />
+            Swift Code: 4545
+            <br /><br />
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"></td>
+          <td>
+            For Unbxd Inc.
+            <br /><br />
+            sign over here <br />
+            Authorised Signature
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
